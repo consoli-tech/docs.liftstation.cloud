@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'docs.liftstation.cloud', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Documentation | LiftStation.cloud',
+      title: '',
       logo: {
         alt: 'LiftStation.cloud',
         src: 'img/logo.png',
@@ -21,7 +21,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Technician App',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -82,16 +82,18 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'technician',
+          routeBasePath: 'technician',
+          sidebarPath: require.resolve('./sidebarsTechnician.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/consolidatedutilities/docs.liftstation.cloud/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/consolidatedutilities/docs.liftstation.cloud/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
