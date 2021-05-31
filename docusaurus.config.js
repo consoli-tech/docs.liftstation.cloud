@@ -1,20 +1,20 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Documentation | LiftStation.cloud',
+  tagline: 'One Stop Water and Wastewater Management',
+  url: 'https://docs.liftstation.cloud',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'consolidatedutilities', // Usually your GitHub org/user name.
+  projectName: 'docs.liftstation.cloud', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Documentation | LiftStation.cloud',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'LiftStation.cloud',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -25,7 +25,7 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/consolidatedutilities/docs.liftstation.cloud',
           label: 'GitHub',
           position: 'right',
         },
@@ -47,11 +47,11 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'Message Boards',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Support Contact',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
@@ -74,7 +74,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Consolidated Utilities, Inc.`,
     },
   },
   presets: [
