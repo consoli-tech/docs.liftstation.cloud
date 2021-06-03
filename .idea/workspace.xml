@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a01b52-f682-41e8-b2da-a31d74fbc253" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sidebarsTechnician.js" beforeDir="false" afterPath="$PROJECT_DIR$/sidebarsTechnician.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/technician/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/technician/intro.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
       <updated>1622472283494</updated>
       <workItem from="1622472284593" duration="9447000" />
       <workItem from="1622654677260" duration="489000" />
-      <workItem from="1622732924336" duration="2530000" />
+      <workItem from="1622732924336" duration="2682000" />
     </task>
     <servers />
   </component>
