@@ -7,7 +7,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Technician',
-      items: ['intro'],
+      items: ['intro', 'login', 'routes', 'stations-and-wells'],
     },
   ],
 
