@@ -14,17 +14,16 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/spreadhseet.svg').default,
     description: (
       <>
-       Don't spend time with Excel Spreadsheets anymore. Once data is collected you can login and generate reports.
-        Or if you would prefer, you can have them emailed to you automatically when they are ready.
+       Don't spend time copy pasting Excel Spreadsheets anymore.
       </>
     ),
   },
   {
     title: 'SCADA Integration',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/scada.svg').default,
     description: (
       <>
         LiftStation.cloud has a Public API, so you can integrate your SCADA System.

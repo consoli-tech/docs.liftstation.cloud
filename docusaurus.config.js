@@ -90,8 +90,6 @@ module.exports = {
           routeBasePath: 'technician',
           sidebarPath: require.resolve('./sidebarsTechnician.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/consolidatedutilities/docs.liftstation.cloud/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
