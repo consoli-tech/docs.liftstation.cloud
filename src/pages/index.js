@@ -19,6 +19,11 @@ function HomepageHeader() {
             to="/technician/intro">
             Technician App Tutorial - 5min ⏱️
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/operator/intro">
+            Operator App Tutorial - 10min ⏱
+          </Link>
         </div>
       </div>
     </header>
@@ -29,7 +34,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Documentation | LiftStation.cloud`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

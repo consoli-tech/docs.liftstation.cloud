@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Documentation | LiftStation.cloud',
+  title: 'Documentation',
   tagline: 'One Stop Water and Wastewater Management',
   url: 'https://docs.liftstation.cloud',
   baseUrl: '/',
@@ -23,7 +23,11 @@ module.exports = {
           position: 'left',
           label: 'Technician',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          to: '/operator/intro',
+          position: 'left',
+          label: 'Operator'
+        },
         {
           href: 'https://github.com/consolidatedutilities/docs.liftstation.cloud',
           label: 'GitHub',
@@ -41,6 +45,10 @@ module.exports = {
               label: 'Technician',
               to: '/technician/intro',
             },
+            {
+              label: 'Operator',
+              to: '/operator/intro'
+            }
           ],
         },
         {
@@ -64,12 +72,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/consolidatedutilities',
             },
           ],
         },
@@ -89,16 +93,21 @@ module.exports = {
           editUrl:
             'https://github.com/consolidatedutilities/docs.liftstation.cloud/edit/master/website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/consolidatedutilities/docs.liftstation.cloud/edit/master/website/blog/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'operator',
+        path: 'operator',
+        routeBasePath: 'operator',
+        sidebarPath: require.resolve('./sidebarsOperator.js')
+      }
+    ]
+  ]
 };
