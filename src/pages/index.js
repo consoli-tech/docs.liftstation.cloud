@@ -19,6 +19,11 @@ function HomepageHeader() {
             to="/technician/intro">
             Technician App Tutorial - 5min ⏱️
           </Link>
+        </div>
+        <div
+          className={styles.buttons}
+          style={{marginTop: '15px'}}
+        >
           <Link
             className="button button--secondary button--lg"
             to="/operator/intro">
@@ -35,7 +40,7 @@ export default function Home() {
   return (
     <Layout
       title={`Documentation | LiftStation.cloud`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for the LiftStation.cloud software suite.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
