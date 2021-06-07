@@ -1,0 +1,23 @@
+{
+  "version-1/tutorialOperator": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "API",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1/intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-1/get-wells"
+        },
+        {
+          "type": "doc",
+          "id": "version-1/add-well-reading"
+        }
+      ]
+    }
+  ]
+}

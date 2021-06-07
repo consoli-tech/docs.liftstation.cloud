@@ -29,6 +29,11 @@ module.exports = {
           label: 'Operator'
         },
         {
+          to: '/api/intro',
+          position: 'left',
+          label: 'API'
+        },
+        {
           href: 'https://github.com/consolidatedutilities/docs.liftstation.cloud',
           label: 'GitHub',
           position: 'right',
@@ -48,6 +53,10 @@ module.exports = {
             {
               label: 'Operator',
               to: '/operator/intro'
+            },
+            {
+              label: 'API',
+              to: '/api/intro'
             }
           ],
         },

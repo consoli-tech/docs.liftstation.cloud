@@ -1,3 +1,5 @@
-# Overview
+# LiftStation.cloud API Documentation
 
-This is under construction.
+**Version:** `1`
+
+**Base URL:** `https://api.liftstation.cloud/v1/`
