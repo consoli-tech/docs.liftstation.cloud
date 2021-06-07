@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('../../static/img/scada.svg').default,
     description: (
       <>
-        LiftStation.cloud has a Public API, so you can integrate your SCADA System.
+        LiftStation.cloud has an API and CLI, so you can integrate your SCADA System.
       </>
     ),
   },
