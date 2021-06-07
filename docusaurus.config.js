@@ -105,6 +105,15 @@ module.exports = {
         path: 'operator',
         routeBasePath: 'operator',
         sidebarPath: require.resolve('./sidebarsOperator.js')
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: require.resolve('./sidebarsApi.js')
       }
     ]
   ]
