@@ -34,6 +34,11 @@ module.exports = {
           label: 'API'
         },
         {
+          to: '/cli/intro',
+          position: 'left',
+          label: 'CLI'
+        },
+        {
           href: 'https://github.com/consolidatedutilities/docs.liftstation.cloud',
           label: 'GitHub',
           position: 'right',
@@ -57,6 +62,10 @@ module.exports = {
             {
               label: 'API',
               to: '/api/intro'
+            },
+            {
+              label: 'CLI',
+              to: '/cli/intro'
             }
           ],
         },
@@ -123,6 +132,15 @@ module.exports = {
         path: 'api',
         routeBasePath: 'api',
         sidebarPath: require.resolve('./sidebarsApi.js')
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cli',
+        path: 'cli',
+        routeBasePath: 'cli',
+        sidebarPath: require.resolve('./sidebarsCli.js')
       }
     ]
   ]

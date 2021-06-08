@@ -1,0 +1,15 @@
+{
+  "version-1.0.0/tutorialOperator": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "CLI",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/intro"
+        }
+      ]
+    }
+  ]
+}
