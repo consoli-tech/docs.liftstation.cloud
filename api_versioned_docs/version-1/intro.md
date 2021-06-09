@@ -18,6 +18,8 @@ request you make.
 
 ### Status Code `401`
 
+**Description:** The request cannot be authenticated. Please refer to the message for more information.
+
 ```json
 {
     "success": false,
