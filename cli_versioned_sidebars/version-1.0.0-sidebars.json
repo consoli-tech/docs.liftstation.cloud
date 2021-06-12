@@ -8,6 +8,18 @@
         {
           "type": "doc",
           "id": "version-1.0.0/intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/config"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/get-wells"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/push-well-reading"
         }
       ]
     }
