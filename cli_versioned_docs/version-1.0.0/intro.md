@@ -6,35 +6,17 @@ The LiftStation.cloud CLI is used to enter well and lift station data through a 
 be preferred to sending API requests.
 
 The CLI is written with Node.js. You will need to install Node.js and the NPM package manager to install this program
-on your computer.
+on your computer. Note that the CLI requires version 12 or greater of Node.js.
 
-## Windows Installation
-
-Go to [Node.js Download](https://nodejs.org/en/download/) to download Node.js. Ensure that the Node.js version is
-12 or greater. 
-
-Once you have completed the installation process, run the following command to ensure that they are installed
-
-```powershell
-PS C:\Users\conutils node -v
-v14.17.0
+## Installation
+Once you have installed Node.js and npm for your operating system run the following command:
+```bash
+$ npm i -g lscloud
 ```
-
-```powershell
-PS C:\Users\conutils npm -v
-6.14.13
-```
-
-Now that they are installed open a Powershell Window and run `npm i -g lscloud`
-
-```powershell
-PS C:\Users\conutils npm i -g lscloud
-```
-
-Run command `lscloud` to ensure installation was successful
-
-```powershell
-PS C:\Users\conutils lscloud
+Once the installation completes run the following command to verify installation. Note that this screen lists the commands
+for the CLI.
+```bash
+$ lscloud
 lscloud
 
 Commands:
@@ -48,23 +30,31 @@ Options:
   --version  Show version number                                       [boolean]
 ```
 
-## Mac Installation
+## Windows Powershell Notes
 
-If `homebrew` is not installed go [here](https://brew.sh/).
+You may receive this a message that says lscloud cannot be loaded because running scripts is disabled on 
+this system. You have three options
+1. Run `Set-ExecutionPolicy RemoteSigned` as an administrator. This command will allow you to run scripts. When you are
+done you can run `Set-ExecutionPolicy Restricted` as an administrator to put things back the way they were.
+2. If you prefer to use Powershell, and you don't want to change the settings for security purposes you can install the 
+script in the Windows Subsystem for Linux and call it from Powershell. You do this by prefacing commands with `wsl`. So `wsl lscloud get wells`.
+The Windows Subsystem for Linux also provides a terminal that you could use if you don't need to use powershell.   
+3. You can run the script in cmd.
 
-Open a terminal Window and enter `brew install node@12`. 
-
-Once you have completed the installation process verify that Node and NPM have been installed
+## Basics
+You can use the parameter `--help` with any command to find out more about it
 
 ```bash
-$ node -v
-v14.17.0
-```
+$ lscloud config --help
+lscloud config
 
-```bash
-$ npm -v
-6.14.13
-```
+Enter your API Credentials
 
-Run the command `npm i -g lscloud`
+Options:
+  --help        Show help                                              [boolean]
+  --version     Show version number                                    [boolean]
+  --api_key     Your API Key                                 [string] [required]
+  --api_secret  Your API Secret                              [string] [required]
+
+```
 

@@ -1,12 +1,11 @@
-# Add a Well Reading
+# Update a Well Reading
 
 ## Description
-This request allows you to enter a reading for a well, but only if a reading does not exist
-for this date and well. To update a reading, please view the next page.
+This request allows you to update a well reading if one already exists for this date and well.
 
 ## Request
 
-**Type / Endpoint:** `POST` `https://api.liftstation.cloud/v1/wells`
+**Type / Endpoint:** `PUT` `https://api.liftstation.cloud/v1/wells`
 
 ### Request Body
 The request body is a JSON Object.
@@ -30,14 +29,12 @@ The request body is a JSON Object.
 |wellId|int (in quotes)||
 |date|date (in quotes)|'YYYY-MM-DD'|
 
-## Response
-
-### Status Code `201`
+### Status Code `200`
 **Description:** The reading was stored in the database.
 ```json
 {
   "success": true,
-  "message": "Reading entered in database"
+  "message": "Resource updated successfully"
 }
 ```
 
@@ -50,13 +47,13 @@ The request body is a JSON Object.
 }
 ```
 
-### Status Code `409`
-**Description:** A reading already exists for the given date and well. Please see the next page, Update a Well Reading
-to update an existing reading.
+### Status Code `404`
+**Description:** A reading does not exist for the given date and well. You should send a POST request instead to create
+the resource.
 ```json
 {
   "success": false,
-  "message": "A reading already exists for this date and well"
+  "message": "A reading does not exist for this date and well"
 }
 ```
 

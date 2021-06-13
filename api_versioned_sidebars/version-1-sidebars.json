@@ -16,6 +16,10 @@
         {
           "type": "doc",
           "id": "version-1/add-well-reading"
+        },
+        {
+          "type": "doc",
+          "id": "version-1/update-well-reading"
         }
       ]
     }

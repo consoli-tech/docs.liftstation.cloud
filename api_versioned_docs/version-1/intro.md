@@ -41,3 +41,7 @@ request you make.
 }
 ```
 
+### Status Code `500`
+**Description:** The server encountered an error. We have a system in place to notify us when this happens. Please try your request
+again later. 
+
